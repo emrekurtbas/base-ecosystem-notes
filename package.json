@@ -1,0 +1,23 @@
+{
+  "name": "base-ecosystem-notes",
+  "version": "1.0.0",
+  "description": "Notes and tooling for Base network development",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "gas": "node scripts/estimate_gas.js",
+    "events": "node scripts/read_events.js"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.0"
+  },
+  "dependencies": {
+    "ethers": "^6.11.0",
+    "viem": "^2.9.0",
+    "wagmi": "^2.9.0"
+  }
+}
